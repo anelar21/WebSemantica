@@ -1,0 +1,1641 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-30 "http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-30="http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#">
+    <Ontology rdf:about="http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#cursa -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-30;cursa">
+        <inverseOf rdf:resource="&untitled-ontology-30;es_cursada_por"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;cursa"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#dicta -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-30;dicta">
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloIX"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriastercerCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloIV"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVI"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVIII"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVII"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloV"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#es_cursada_por -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-30;es_cursada_por">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_cursada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#es_dictada_por -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-30;es_dictada_por">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <inverseOf rdf:resource="&untitled-ontology-30;dicta"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#es_recibida_por -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-30;es_recibida_por">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <inverseOf rdf:resource="&untitled-ontology-30;recibe"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#recibe -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-30;recibe">
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+            </Restriction>
+        </rdfs:domain>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#direccion -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-30;direccion">
+        <rdfs:domain rdf:resource="&untitled-ontology-30;Docentes"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloVI"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesmoduloVIII"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#email -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-30;email">
+        <rdfs:domain rdf:resource="&untitled-ontology-30;Docentes"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloVI"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesmoduloVIII"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#nombre -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-30;nombre">
+        <rdfs:domain rdf:resource="&untitled-ontology-30;Docentes"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloVI"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesmoduloVIII"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#nota -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-30;nota">
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloVI"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesmoduloVIII"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#telefono -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-30;telefono">
+        <rdfs:domain rdf:resource="&untitled-ontology-30;Docentes"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloIX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloV"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloVI"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-30;EstudiantesmoduloVIII"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#AEIRNNR -->
+
+    <Class rdf:about="&untitled-ontology-30;AEIRNNR">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Area"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Area -->
+
+    <Class rdf:about="&untitled-ontology-30;Area">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;UNL"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Carrera -->
+
+    <Class rdf:about="&untitled-ontology-30;Carrera">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;AEIRNNR"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Ciclo -->
+
+    <Class rdf:about="&untitled-ontology-30;Ciclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Sistemas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Docentes -->
+
+    <Class rdf:about="&untitled-ontology-30;Docentes">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Sistemas"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloIV"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriastercerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloIX"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVIII"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloV"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVI"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVII"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;dicta"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Electromecanica -->
+
+    <Class rdf:about="&untitled-ontology-30;Electromecanica">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ElectronicayTelecomunicaciones -->
+
+    <Class rdf:about="&untitled-ontology-30;ElectronicayTelecomunicaciones">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesModuloIV -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesModuloIV">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloIV"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloIV"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesModuloIX -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesModuloIX">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloIX"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloIX"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesModuloV -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesModuloV">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloV"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloV"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesModuloVI -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesModuloVI">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloVI"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVI"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesModuloVII -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesModuloVII">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloVII"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVII"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesModuloX -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesModuloX">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloX"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesPrimerCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesPrimerCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;PrimerCiclo"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesSegundoCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesSegundoCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;SegundoCiclo"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;cursa"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesTercerCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesTercerCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;TercerCiclo"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriastercerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstudiantesmoduloVIII -->
+
+    <Class rdf:about="&untitled-ontology-30;EstudiantesmoduloVIII">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloVIII"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;recibe"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;MateriasModuloVIII"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Geologia -->
+
+    <Class rdf:about="&untitled-ontology-30;Geologia">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MallaNueva -->
+
+    <Class rdf:about="&untitled-ontology-30;MallaNueva">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Ciclo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MallaVieja -->
+
+    <Class rdf:about="&untitled-ontology-30;MallaVieja">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Ciclo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloIV -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloIV">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloIV"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesModuloIV"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloIX -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloIX">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloIX"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesModuloIX"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloV -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloV">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloV"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesModuloV"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloVI -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloVI">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloVI"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesModuloVI"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloVII -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloVII">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloVII"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesModuloVII"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloVIII -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloVIII">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloVIII"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesmoduloVIII"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasModuloX -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasModuloX">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;ModuloX"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasPrimerCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasPrimerCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;PrimerCiclo"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_cursada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriasSegundoCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriasSegundoCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;SegundoCiclo"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#MateriastercerCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;MateriastercerCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;TercerCiclo"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;Docentes"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-30;es_recibida_por"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-30;EstudiantesTercerCiclo"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloIV -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloIV">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloIX -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloIX">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloV -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloV">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloVI -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloVI">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloVII -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloVII">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloVIII -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloVIII">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ModuloX -->
+
+    <Class rdf:about="&untitled-ontology-30;ModuloX">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaVieja"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#PrimerCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;PrimerCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaNueva"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#SegundoCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;SegundoCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaNueva"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Sistemas -->
+
+    <Class rdf:about="&untitled-ontology-30;Sistemas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;Carrera"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#TercerCiclo -->
+
+    <Class rdf:about="&untitled-ontology-30;TercerCiclo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-30;MallaNueva"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#UNL -->
+
+    <Class rdf:about="&untitled-ontology-30;UNL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Andrea_Armijos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Andrea_Armijos">
+        <rdf:type rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Anteproyecto_Tesis -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Anteproyecto_Tesis">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+        <untitled-ontology-30:es_dictada_por rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Mario_Cueva"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Fredy_Ajila"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Marco_Ocampo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Rene_Guaman"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Luis_Chamba"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#CalculoII -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;CalculoII">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Calculo_Diferencial -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Calculo_Diferencial">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Control_Automatizado -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Control_Automatizado">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+        <untitled-ontology-30:es_dictada_por rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Marco_Ocampo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Mario_Cueva"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Rene_Guaman"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Luis_Chamba"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Fredy_Ajila"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EcologiayMedioAmbienteTecnologico -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;EcologiayMedioAmbienteTecnologico">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#EstructuradeDatos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;EstructuradeDatos">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Estudiante1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Estudiante1">
+        <rdf:type rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Calculo_Diferencial"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;EcologiayMedioAmbienteTecnologico"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;EstructuradeDatos"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;FisicaII"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;LaboratorioFisicaII"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;ProbabilidadeInferenciaEstadistica"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;ProgramacionI"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Estudiante2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Estudiante2">
+        <rdf:type rdf:resource="&untitled-ontology-30;EstudiantesSegundoCiclo"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;CalculoII"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;EcologiayMedioAmbienteTecnologico"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;EstructuradeDatos"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Fisica"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;LaboratorioFisicaII"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;ProbabilidadeInferenciaEstadistica"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;ProgramacionI"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Estudiante_1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Estudiante_1">
+        <rdf:type rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Calculo_Diferencial"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Expresion_Oral_y_Escrita"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Fisica"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Fundamentos_Informaticos"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Quimica"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Estudiante_2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Estudiante_2">
+        <rdf:type rdf:resource="&untitled-ontology-30;EstudiantesPrimerCiclo"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Calculo_Diferencial"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Expresion_Oral_y_Escrita"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Fisica"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Fundamentos_Informaticos"/>
+        <untitled-ontology-30:cursa rdf:resource="&untitled-ontology-30;Quimica"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Etica -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Etica">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+        <untitled-ontology-30:es_dictada_por rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Fredy_Ajila"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Marco_Ocampo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Mario_Cueva"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Rene_Guaman"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Luis_Chamba"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Expresion_Oral_y_Escrita -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Expresion_Oral_y_Escrita">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Fisica -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Fisica">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#FisicaII -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;FisicaII">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Franco_Salcedo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Franco_Salcedo">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+        <untitled-ontology-30:dicta rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Fredy_Ajila -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Fredy_Ajila">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Fundamentos_Informaticos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Fundamentos_Informaticos">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Henry_Paz -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Henry_Paz">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+        <untitled-ontology-30:dicta rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <untitled-ontology-30:dicta rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Inteligencia_Artificial -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Inteligencia_Artificial">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+        <untitled-ontology-30:es_dictada_por rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Fredy_Ajila"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Luis_Chamba"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Rene_Guaman"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Mario_Cueva"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Marco_Ocampo"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Karla_Herrera -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Karla_Herrera">
+        <rdf:type rdf:resource="&untitled-ontology-30;EstudiantesModuloX"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#LaboratorioFisicaII -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;LaboratorioFisicaII">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Luis_Chamba -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Luis_Chamba">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Marco_Ocampo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Marco_Ocampo">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Mario_Cueva -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Mario_Cueva">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Pablo_Ordoñez -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Pablo_Ordoñez">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+        <untitled-ontology-30:dicta rdf:resource="&untitled-ontology-30;Etica"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ProbabilidadeInferenciaEstadistica -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;ProbabilidadeInferenciaEstadistica">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#ProgramacionI -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;ProgramacionI">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasSegundoCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Quimica -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Quimica">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasPrimerCiclo"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_1"/>
+        <untitled-ontology-30:es_cursada_por rdf:resource="&untitled-ontology-30;Estudiante_2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Rene_Guaman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Rene_Guaman">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Roberto_Jacome -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Roberto_Jacome">
+        <rdf:type rdf:resource="&untitled-ontology-30;Docentes"/>
+        <untitled-ontology-30:dicta rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <untitled-ontology-30:dicta rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Anteproyecto_Tesis"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Inteligencia_Artificial"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Etica"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Control_Automatizado"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;dicta"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Simulacion -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Simulacion">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+        <untitled-ontology-30:es_dictada_por rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Luis_Chamba"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Fredy_Ajila"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Mario_Cueva"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Marco_Ocampo"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Rene_Guaman"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Simulacion"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/karlita/ontologies/2014/5/untitled-ontology-30#Sistemas_Expertos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-30;Sistemas_Expertos">
+        <rdf:type rdf:resource="&untitled-ontology-30;MateriasModuloX"/>
+        <untitled-ontology-30:es_dictada_por rdf:resource="&untitled-ontology-30;Roberto_Jacome"/>
+    </NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Pablo_Ordoñez"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Rene_Guaman"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Luis_Chamba"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Mario_Cueva"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Franco_Salcedo"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Henry_Paz"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Fredy_Ajila"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;NegativePropertyAssertion"/>
+        <targetIndividual rdf:resource="&untitled-ontology-30;Marco_Ocampo"/>
+        <sourceIndividual rdf:resource="&untitled-ontology-30;Sistemas_Expertos"/>
+        <assertionProperty rdf:resource="&untitled-ontology-30;es_dictada_por"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
